@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+.header {
+    background: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.dm {
+    color: blue;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.heading {
+    color: blue;
+}
+
+.club {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
+
+.dark .card {
+    background: #222;
+}
+
+.bt1 {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.bt1:hover {
+    background: darkblue;
+}
+
+.bt2 {
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.bt2:hover {
+    background: darkgreen;
+}
+
+.bt3 {
+    color: white;
+    background-color: violet;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.bt3:hover {
+    background: darkviolet;
+}
+
+#bookList div {
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#chatBox {
+    border: 1px solid gray;
+    height: 120px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.chat {
+    width: 80%;
+    padding: 10px;
+}
+
+.foot {
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
