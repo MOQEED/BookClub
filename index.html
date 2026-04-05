@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <header class="header">
+        <h1>The Book Nook</h1>
+        <p>A community for book lovers</p>
+        <button onclick="toggleDark()" class="dm">Dark Mode</button>
+    </header>
+    <div class="card">
+        <h2 class="heading">Create / Join Club</h2>
+        <label>Club Name:</label><br />
+        <input id="clubName" placeholder="Enter club name" class="club"><br><br>
+        <label>Club Type:</label>
+        <select id="clubType" class="club">
+            <option>Public</option>
+            <option>Private</option>
+        </select><br><br>
+        <label>Club Rules:</label>
+        <textarea id="rules" placeholder="Enter club rules" class="club"></textarea><br><br>
+        <label>Invite Link:</label>
+        <input id="invite" placeholder="Invite link" class="club"><br><br>
+        <button onclick="createClub()" class="bt1">Create Club</button>
+        <button onclick="joinClub()" class="bt2">Join Club</button>
+    </div>
+    <div class="card">
+        <h2 class="heading">Books Section</h2>
+        <button onclick="loadBooks()" class="bt3">Refresh Books</button>
+        <button onclick="shuffleBooks()" class="bt3">Shuffle Books</button>
+        <p id="loadingText">Loading books...</p>
+        <div id="bookList"></div>
+        <div id="bookDetails"></div>
+    </div>
+    <div class="card">
+        <h2 class="heading">Reading Progress Tracker</h2>
+        <label>Chapters/Pages Read:</label>
+        <input type="number" id="pages" placeholder="Enter Chapters/Pages read" step="1" class="club"><br><br>
+        <label>Finish By:</label>
+        <input type="date" id="date" class="club"><br><br>
+        <button onclick="logProgress()" class="bt1">Log Progress</button>
+        <p id="progressOutput"></p>
+    </div>
+    <div class="card">
+        <h2 class="heading">Discussion & Engagement</h2>
+        <label>Schedule Discussion:</label><br><br>
+        <input type="date" id="discussionDate" class="club"><br><br>
+        <button onclick="scheduleDiscussion()" class="bt1">Schedule</button>
+        <p id="discussionOutput"></p>
+    </div>
+    <div class="card">
+        <h2 class="heading">Chat</h2>
+        <div id="chatBox"></div>
+        <input id="chatInput" placeholder="Enter your message with your name" class="chat">
+        <button onclick="sendMessage()" class="bt1">Send</button>
+    </div>
+    <footer class="foot">
+        <p>2026 Book Club App|Terms of Service|Privacy Policy</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
